@@ -3,7 +3,7 @@ import {renderToString} from 'react-dom/server';
 import {StaticRouter as Router} from 'react-router-dom';
 import FullPage from "../ClientApp/Components/common/FullPage";
 
-export default (req) => {
+export default req => {
     let context = {};
     const content = renderToString(
         <Router location={req.path} context={context}>

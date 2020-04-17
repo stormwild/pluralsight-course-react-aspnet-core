@@ -7,6 +7,7 @@ app.use(express.static('public',{
 }));
 
 import Renderer from './Renderer';
+
 app.get('*', (req, res) => {
     const rendererInstance = Renderer(req);
 
